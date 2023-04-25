@@ -1,8 +1,8 @@
 @extends('layouts/app')
-@section('title', 'Todos os produtos')
+@section('title', '$exibir_categoria->nome')
 @section('conteudo')
     <div class="row mt-3 mr-3">
-        @foreach ($produtos as $produto)
+        @foreach ($exibir_categoria as $produto)
             <div class="col-md-3">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
